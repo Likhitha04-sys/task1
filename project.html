@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Edu+QLD+Hand:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manufacturing+Consent&family=National+Park:wght@200..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+   
+    
+    <style>
+        header{
+            position: fixed;
+            border: solid ;
+            border-color: rgb(18, 16, 16);
+            background-color: cornflowerblue;
+            width: 1523px;
+            top:0px;
+            left: 0;
+            height: 110px;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/000/701/690/original/abstract-polygonal-banner-background-vector.jpg);
+            background-size: cover;
+
+        }
+        h1{
+            position: fixed;
+            font-family: "Manufacturing Consent", system-ui;
+            font-size: 40px;
+            left: 50px;
+            font-weight: 100;
+            text-shadow: 2px 5px 2px whitesmoke;
+            margin-top: 20px;
+        }
+        
+        input{
+            position: fixed;
+            font-size: 20px;
+            left: 480px;
+            top:40px;
+            height: 35px;
+            width: 400px;
+            border: solid;
+            border-color: black;
+            border-radius: 20px;
+        }
+       
+        button{
+            position: fixed;
+             font-size: 20px;
+            left: 1300px;
+            top:40px;
+            height: 40px; 
+            width: 150px;
+            border: solid;
+            border-color: black;
+            border-radius: 20px;
+            background-color: paleturquoise;
+            
+             
+        }
+        main{
+             border:solid;
+            width: 1510px;
+            height: fit-content;
+            margin-top: 115px;
+            margin-left: 1px;
+            background-color: paleturquoise;
+
+
+        }
+        #container1{
+            border: solid;
+            border-color: transparent;
+            margin-top: 1px;
+            margin-left: 1px;
+            height: 600px;
+            width: 1505px;
+            background-image: url("https://www.pngmagic.com/webp_images/nature-background-with-ocean-and-beach-view_TQ0A.webp");
+            background-size: cover;
+        }
+        #h1{
+            margin-top: 50px;
+            margin-left: 850px;
+            font-size: 30px;
+            
+            font-family: "Playfair Display SC", serif;
+            font-weight: 700;
+            font-size: 40px;
+
+        }
+        #p1{
+            font-family: "Exo 2", sans-serif;
+            font-size: 30px;
+            margin-left: 500px;
+            margin-top: 25px;
+            font-weight: 300;
+            
+        }
+        #container2{
+            border: solid;
+            width: 1505px;
+            height: 600px;
+            margin-left: 1px;
+            
+            height: fit-content;
+            background-image: url(https://slidescorner.com/wp-content/uploads/2024/09/History-Background-for-Slides-PPT-Wallpaper-Old-Open-Parchment-Paper-by-SlidesCorner.com_-1536x864.jpg);
+            background-size: cover;
+            border-color: transparent;
+
+
+
+        }
+        #h2{
+            margin-top: 50px;
+            text-align: center;
+            margin-top: 120px;
+         
+            font-size: 30px;
+            
+            font-family: "Playfair Display SC", serif;
+            font-weight: 700;
+            font-size: 40px;
+
+
+        }
+        #ul1{
+            font-family: "Exo 2", sans-serif;
+            font-size: 30px;
+            margin-left: 470px;
+           
+           
+           
+
+        }
+        #container3{
+            border: solid;
+            width: 1505px;
+            height: 200px;
+            
+            border-color: transparent;
+             background-image: url(https://static.vecteezy.com/system/resources/previews/000/701/690/original/abstract-polygonal-banner-background-vector.jpg);
+            background-size: cover;
+
+        }
+        #h3{
+            margin-top: 50px;
+            text-align: center;
+            margin-top: 40px;
+         
+            font-size: 30px;
+            
+            font-family: "Playfair Display SC", serif;
+            font-weight: 700;
+            font-size: 80px;
+            text-shadow:5px 5px 5px  whitesmoke;
+
+
+        }
+        #maindiv{
+            border: solid;
+            width: 1505px;
+            height: fit-content;
+            display: flex;
+            display: grid;
+            grid-template-rows: repeat(2,740px);
+            grid-template-columns: repeat(2,740px);
+            background-color: paleturquoise;
+           border-color: transparent;
+
+        }
+        #card{
+            border: solid;
+            width:730px;
+            height:730px;
+            margin-top: 1px;
+            margin-left: 15px;
+           border-radius: 10px;
+           background-image: url(https://static.vecteezy.com/system/resources/previews/000/701/690/original/abstract-polygonal-banner-background-vector.jpg);
+            background-size: cover;
+
+            
+
+        }
+        img{
+            height: 500px;
+        }
+
+        #h4{
+           
+            text-align: center;
+           
+            font-size: 30px;
+            
+            font-family: "Playfair Display SC", serif;
+            font-weight: 700;
+            font-size: 40px;
+
+        }
+
+        #p2{
+            font-family: "Exo 2", sans-serif;
+            font-size: 20px;
+            
+            font-weight: 300;
+
+        }
+        .btn-primary{
+            margin-left: 580px;
+            margin-top: 10px;
+        }
+       
+       
+       
+        
+        footer{
+            border:solid;
+            width: 1510px;
+            height: 400px;
+            margin-top: 1px;
+            display: flex;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/000/701/690/original/abstract-polygonal-banner-background-vector.jpg);
+            background-size: cover;
+
+
+            
+        }
+        #col1{
+            border: solid;
+            border-color: transparent;
+            width: 370px;
+            height: 300px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        #icon1{
+            margin-left: 5px;
+           
+        }
+        #col2{
+            border: solid;
+            border-color: transparent;
+            width: 300px;
+            height: 300px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        ul{
+          font-family: "Exo 2", sans-serif;
+          font-size: 30px;
+          text-align: left;
+          <i class="fa-solid fa-place-of-worship"></i>
+        }
+        #col3{
+            border: solid;
+            border-color: transparent;
+            width: 300px;
+            height: 300px;
+            margin-top: 50px;
+            margin-left: 50px;
+        } 
+        h4{
+            font-family: "Manufacturing Consent", system-ui;
+            font-size: 40px;
+            left: 50px;
+            font-weight: 100;
+            text-shadow: 2px 5px 2px whitesmoke;
+        } 
+        #icon2{
+          color: rgb(59, 225, 59);
+        }
+        #icon3{
+          color: rgb(232, 10, 54);
+        } 
+        #icon4{
+          color: transparent;
+          background-image: linear-gradient(30deg,rgb(215, 51, 155),orange );-webkit-background-clip: text;
+         
+        } 
+        #icon5{
+          color: rgb(9, 9, 239);
+        }  
+        a{
+          color: black;
+          text-decoration: none;
+        }
+        a:hover{
+          color: blue;
+          background-color: aliceblue;
+          
+          
+        }  
+       
+       
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Historic Pathways <i class="fa-solid fa-place-of-worship"></i></h1>
+        <input type="text" placeholder="search">
+        <button> <a href="login.html">Login / Signup</a></button>
+        
+
+    </header>
+
+    <main>
+        <div id="container1">
+            <h2 id="h1">About us</h2>
+            <p id="p1">Welcome to Historic Pathways – your gateway to exploring the stories, landmarks, and legacies that have shaped our world. Whether you're passionate about ancient civilizations, forgotten trails, or the hidden narratives behind iconic places, we guide you through the corridors of time. Our mission is to connect the past with the present, offering immersive insights, curated journeys, and resources that inspire curiosity and appreciation for history in all its forms.
+
+            </p>
+
+        </div>
+        <div id="container2">
+            <h2 id="h2">Featured Destinations</h2>
+            <ul type="none" id="ul1" >
+               <li> Taj Mahal – Agra</li>
+
+<li>Red Fort – Delhi</li>
+
+<li>Fatehpur Sikri – Uttar Pradesh</li>
+
+
+
+<li>Hampi – Karnataka</li>
+
+<li>Ellora Caves – Maharashtra</li>
+
+<li>Ajanta Caves – Maharashtra</li>
+
+<li>Chittorgarh Fort – Rajasthan</li>
+
+<li>Konark Sun Temple – Odisha</li>
+
+
+<li>Golconda Fort – Telangana</li>
+
+<li>Sanchi Stupa – Madhya Pradesh</li>
+           
+            </ul>
+                
+            
+        </div>
+        <div id="container3">
+            <h2 id="h3">
+                Historic Places Of India
+            </h2>
+
+        </div>
+        <div id="maindiv">
+
+            <div id="card" >
+  <img src="https://www.tajmahal.prakashsoft.com/wp-content/uploads/-20.jpg" class="card-img-top" >
+  <div class="card-body">
+    <h2 id="h4">Taj Mahal</h2>
+    <p id="p2">The Taj Mahal is a magnificent white marble mausoleum located in Agra, India, built by the Mughal emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal. Completed in 1653.</p>
+    <a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="btn btn-primary">More Info</a>
+  </div>
+</div>
+
+<div id="card" >
+  <img src="https://wallpaperaccess.com/full/2399199.jpg" class="card-img-top" >
+  <div class="card-body">
+    <h2 id="h4">Red Fort</h2>
+    <p id="p2">The Red Fort, located in Delhi, India, is a historic fort built by the Mughal emperor Shah Jahan in 1648 as the main residence of the Mughal emperors. Made of striking red sandstone.</p>
+    <a href="https://en.wikipedia.org/wiki/Red_Fort" class="btn btn-primary">More Info</a>
+  </div>
+</div>
+
+
+<div id="card" >
+  <img src="https://i.pinimg.com/originals/02/ce/56/02ce5678f1a776ae317260e108569d02.jpg" class="card-img-top" >
+  <div class="card-body">
+    <h2 id="h4">Fatehpur Sikri</h2>
+    <p id="p2">Fatehpur Sikri is a historic city located near Agra, India, built by the Mughal emperor Akbar in the late 16th century. It served as the Mughal capital for a short period but was later abandoned due to water scarcity.</p>
+    <a href="https://en.wikipedia.org/wiki/Fatehpur_Sikri" class="btn btn-primary">More Info</a>
+  </div>
+</div>
+
+
+<div id="card" >
+  <img src="https://karnatakatourism.org/wp-content/uploads/2020/05/Hampi.jpg" class="card-img-top" >
+  <div class="card-body">
+    <h2 id="h4">Hampi</h2>
+    <p id="p2">Hampi is an ancient town in the southern state of Karnataka, India, known for its rich history and magnificent ruins of the Vijayanagara Empire. Once a thriving capital in the 14th to 16th centuries, Hampi is now a UNESCO World Heritage Site.</p>
+    <a href="https://en.wikipedia.org/wiki/Hampi" class="btn btn-primary"> more Info</a>
+  </div>
+</div>
+
+
+<div id="card" >
+  <img src="https://www.adotrip.com/public/images/areas/master_images/5c3dc80ba30e3-Ellora_caves_Attractions.jpg" class="card-img-top" >
+  <div class="card-body">
+    <h2 id="h4">Ellora Caves</h2>
+    <p id="p2">The Ellora Caves, located in Maharashtra, India, are a remarkable complex of rock-cut temples and monasteries carved between the 6th and 10th centuries. </p>
+    <a href="https://en.wikipedia.org/wiki/Ellora_Caves" class="btn btn-primary">More Info</a>
+  </div>
+</div>
+
+
+<div id="card" >
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Ajanta_%2863%29.jpg/500px-Ajanta_%2863%29.jpg" class="card-img-top" >
+  <div class="card-body">
+    <h2 id="h4">Ajanta Caves</h2>
+    <p id="p2">The Ajanta Caves, located in Maharashtra, India, are a group of 30 rock-cut Buddhist cave monuments dating from the 2nd century BCE to about the 6th century CE. </p>
+    <a href="https://en.wikipedia.org/wiki/Ajanta_Caves" class="btn btn-primary">More Info</a>
+  </div>
+</div>
+
+
+<div id="card" >
+  <img src="https://getsready.com/wp-content/uploads/2016/03/Chittorgarh-fort-14.jpg" class="card-img-top" >
+  <div class="card-body">
+    <h2 id="h4">Chittorgarh Fort</h2>
+    <p id="p2">Chittorgarh Fort, located in Rajasthan, India, is one of the largest and most historic forts in the country. Built in the 7th century, it served as the capital of the Mewar kingdom and symbolizes Rajput bravery, sacrifice, and honor. </p>
+    <a href="https://en.wikipedia.org/wiki/Chittor_Fort" class="btn btn-primary">More Info</a>
+  </div>
+</div>
+
+
+<div id="card" >
+  <img src="https://www.tripvaani.com/wp-content/uploads/2020/05/Konark-Sun-Temple-or-Black-Pagoda-The-Chariot-of-Sun.jpg" class="card-img-top" >
+  <div class="card-body">
+    <h2 id="h4">Konark Sun Temple</h2>
+    <p id="p2">The Konark Sun Temple, located in Odisha, India, is a stunning 13th-century temple dedicated to the Sun God, Surya. Built by King Narasimhadeva I of the Eastern Ganga dynasty, the temple is designed in the shape of a gigantic chariot.</p>
+    <a href="https://en.wikipedia.org/wiki/Konark_Sun_Temple" class="btn btn-primary"> More Info</a>
+  </div>
+</div>
+
+
+<div id="card" >
+  <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res40/68000/68318-Golconda-Fort.jpg" class="card-img-top" >
+  <div class="card-body">
+    <h2 id="h4">Golconda Fort</h2>
+    <p id="p2">Golconda Fort, located near Hyderabad in Telangana, India, is a historic fortress known for its impressive architecture and advanced acoustic system. Originally built in the 13th century by the Kakatiya dynasty.</p>
+    <a href="https://en.wikipedia.org/wiki/Golconda" class="btn btn-primary">More Info</a>
+  </div>
+</div>
+
+
+<div id="card" >
+  <img src="https://media.istockphoto.com/id/1343698809/photo/sanchi-is-a-buddhist-complex-famous-for-its-great-stupa-on-a-hilltop-at-sanchi-town-in-raisen.jpg?s=612x612&w=0&k=20&c=KxC8TlKfCc_tEv1MRsQVCDsZPJi_moXxkMy4IGW8fv0=" class="card-img-top" >
+  <div class="card-body">
+    <h2 id="h4">Sanchi Stupa</h2>
+    <p id="p2">The Sanchi Stupa, located in Madhya Pradesh, India, is one of the oldest and most important Buddhist monuments in the country. Originally built in the 3rd century BCE by Emperor Ashoka, it enshrines sacred relics of the Buddha.</p>
+    <a href="https://en.wikipedia.org/wiki/Sanchi_Stupa" class="btn btn-primary">More Info</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+        
+        
+    </main>
+
+    <footer>
+        <ul type="none" id="col1">
+            <h4>Historic pathways<i id="icon1" class="fa-solid fa-place-of-worship "></i></h4>
+            <p id="p2">"Walk the past. Discover the legacy."</p>
+        </ul>
+
+        <ul type="none" id="col2">
+         <li>Quick Links</li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about us.html">About us</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="faq's.html">FAQ's</a></li>
+         
+            
+        </ul>
+
+        <ul type="none" id="col3">
+          
+          <li>Follow us on</li>
+          <li><a href="https://web.whatsapp.com:5222/">Whatsapp</a><i id="icon2" class="fa-brands fa-square-whatsapp"></i></li>
+          <li><a href="https://www.youtube.com/?gl=IN">Youtube</a> <i id="icon3"class="fa-brands fa-youtube"></i></li>
+          <li><a href="https://www.instagram.com/">Instagram</a> <i id="icon4"class="fa-brands fa-square-instagram"></i></li>
+          <li><a href="https://www.facebook.com/">Facebook</a> <i id="icon5"class="fa-brands fa-square-facebook"></i></li>
+          
+            
+        </ul>
+       
+        
+        
+
+    </footer>
+
+    
+</body>
+</html>
